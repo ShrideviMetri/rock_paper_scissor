@@ -12,7 +12,7 @@ const genCompChoice= () =>{
 
 const drawGame=()=>{
     console.log("It's a tie!");
-    msg.innerText=`It's a tie! , both chose ${userChoice}`;
+    msg.innerText=`It is a tie! , both chose ${userChoice}`;
 }
 
 const showWinner=(userWin,userChoice,compChoice)=>{
