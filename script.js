@@ -10,7 +10,7 @@ const genCompChoice= () =>{
     return options[randomIndex];
 };
 
-const drawGame=()=>{
+const drawGame=(userChoice)=>{
     console.log("It's a tie!");
     msg.innerText=`It is a tie! , both chose ${userChoice}`;
 }
@@ -36,7 +36,7 @@ const playGame=(userChoice)=>{
     const compChoice=genCompChoice();
     console.log("Computer choice: "+compChoice);
     if(userChoice===compChoice){
-        drawGame();
+        drawGame(userChoice);
     }else {
         let userWin=true;
         if(userChoice==="rock" && compChoice==="paper"){
